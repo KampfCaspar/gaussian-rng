@@ -4,12 +4,13 @@
   "version": "1.0.6",
   "description": "A Gaussian random number generator with mean, standard deviation, and skew control.",
   "main": "dist/cjs/index.cjs",
-  "module": "dist/esm/index.js",
+  "module": "dist/index.js",
   "exports": {
-    "import": "./dist/esm/index.js",
+    "types": "./dist/types/index.d.ts",
+    "import": "./dist/index.js",
     "require": "./dist/cjs/index.cjs"
   },
-  "types": "dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json && mv dist/cjs/index.js dist/cjs/index.cjs",
     "test": "vitest",
